@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>マイクラダメージ計算</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>マイクラダメージ計算テスト</h2>
+    <div>
+      <div>攻撃力 : <input type="number" id="attack" oninput="damagecalc()" style="width: 2.7rem" /></div>
+      <div>防具値 : <input type="number" id="armor" oninput="damagecalc()" value="21" style="width: 2.7rem" /></div>
+      <div>防具強度 : <input type="number" id="armortoughness" oninput="damagecalc()" value="15" style="width: 2.7rem" /></div>
+      <div>prot : <input type="number" id="prot" oninput="damagecalc()" value="20" style="width: 2.7rem" /></div>
+      <br />
+      <br />
+      適用された計算方法: <span id="whichmethod"></span>
+      <br />
+      ダメージ: <span id="calculateddamage"></span>
+      <br />
+      <br />
+      ・軽減率
+      <br />
+      防具強度込:&nbsp;&nbsp;<span id="reductionrate1"></span>%
+      <br />
+      防具値/125:&nbsp;&nbsp;<span id="reductionrate2"></span>%
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
